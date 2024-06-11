@@ -1,0 +1,197 @@
+export const mockAuctionData = [
+    {
+        authorName: 'Adam',
+        itemName: 'Vintage Clock',
+        description: 'A beautiful antique wall clock from the 19th century.',
+        starting_bid: 100,
+        bid_increment: 10,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?clock',
+    },
+    {
+        authorName: 'Adam2',
+        itemName: 'Modern Art Painting',
+        description: 'A stunning piece of modern art by a renowned artist.',
+        starting_bid: 500,
+        bid_increment: 50,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?art',
+    },
+    {
+        authorName: 'Adam3',
+        itemName: 'Vintage Car',
+        description: 'A classic vintage car in excellent condition.',
+        starting_bid: 20000,
+        bid_increment: 1000,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?car',
+    },
+    {
+        authorName: 'Adam4',
+        itemName: 'Luxury Watch',
+        description: 'A high-end luxury watch with a diamond-encrusted face.',
+        starting_bid: 3000,
+        bid_increment: 200,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?watch',
+    },
+    {
+        authorName: 'Adam5',
+        itemName: 'Designer Handbag',
+        description:
+            'A limited edition designer handbag made from premium leather.',
+        starting_bid: 1500,
+        bid_increment: 100,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?handbag',
+    },
+    {
+        authorName: 'Adam6',
+        itemName: 'Antique Furniture Set',
+        description:
+            'A set of antique furniture including a table, chairs, and a cabinet.',
+        starting_bid: 800,
+        bid_increment: 50,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?furniture',
+    },
+    {
+        authorName: 'Adam7',
+        itemName: 'Rare Coin Collection',
+        description: 'A collection of rare coins from around the world.',
+        starting_bid: 1000,
+        bid_increment: 50,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?coin',
+    },
+    {
+        authorName: 'Adam8',
+        itemName: 'Handcrafted Jewelry',
+        description:
+            'A unique set of handcrafted jewelry including a necklace and earrings.',
+        starting_bid: 400,
+        bid_increment: 20,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?jewelry',
+    },
+    {
+        authorName: 'Adam9',
+        itemName: 'Signed Sports Memorabilia',
+        description: 'A signed jersey and ball from a famous sports player.',
+        starting_bid: 600,
+        bid_increment: 30,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?sports',
+    },
+    {
+        authorName: 'Adam10',
+        itemName: 'Luxury Vacation Package',
+        description:
+            'A week-long luxury vacation package for two to a tropical destination.',
+        starting_bid: 5000,
+        bid_increment: 250,
+        auction_end_date: '2024-07-01T18:00:00Z',
+        image_uri: 'https://source.unsplash.com/random/?vacation',
+    },
+    // {
+    //     itemName: 'Gourmet Dining Experience',
+    //     description:
+    //         'A dining experience for two at a Michelin-starred restaurant.',
+    //     starting_bid: 200,
+    //     bid_increment: 20,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?dining',
+    // },
+    // {
+    //     itemName: 'Concert Tickets',
+    //     description: 'Two VIP tickets to a sold-out concert.',
+    //     starting_bid: 300,
+    //     bid_increment: 25,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?concert',
+    // },
+    // {
+    //     itemName: 'Fitness Equipment Set',
+    //     description:
+    //         'A complete set of home fitness equipment including weights and a treadmill.',
+    //     starting_bid: 700,
+    //     bid_increment: 50,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?fitness',
+    // },
+    // {
+    //     itemName: 'Handmade Quilt',
+    //     description: 'A beautiful handmade quilt with intricate patterns.',
+    //     starting_bid: 150,
+    //     bid_increment: 10,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?quilt',
+    // },
+    // {
+    //     itemName: 'Golf Club Set',
+    //     description:
+    //         'A top-of-the-line golf club set including a bag and accessories.',
+    //     starting_bid: 800,
+    //     bid_increment: 50,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?golf',
+    // },
+    // {
+    //     itemName: 'Luxury Skincare Set',
+    //     description:
+    //         'A complete set of luxury skincare products from a premium brand.',
+    //     starting_bid: 300,
+    //     bid_increment: 20,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?skincare',
+    // },
+    // {
+    //     itemName: 'Exclusive Wine Collection',
+    //     description:
+    //         'A collection of rare and exclusive wines from around the world.',
+    //     starting_bid: 1200,
+    //     bid_increment: 100,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?wine',
+    // },
+    // {
+    //     itemName: 'Home Theater System',
+    //     description: 'A high-end home theater system with surround sound.',
+    //     starting_bid: 1000,
+    //     bid_increment: 50,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?theater',
+    // },
+    // {
+    //     itemName: 'Electric Bike',
+    //     description: 'A modern electric bike with advanced features.',
+    //     starting_bid: 1200,
+    //     bid_increment: 100,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?bike',
+    // },
+    // {
+    //     itemName: 'Photography Session',
+    //     description:
+    //         'A professional photography session including prints and digital copies.',
+    //     starting_bid: 400,
+    //     bid_increment: 25,
+    //     auction_end_date: '2024-07-01T18:00:00Z',
+    //     image_uri: 'https://source.unsplash.com/random/?photography',
+    // },
+];
+
+export const mockTopArtist = [
+    {
+        id: 1,
+        auctionName: 'Adam',
+    },
+    {
+        id: 2,
+        auctionName: 'Amam',
+    },
+    {
+        id: 3,
+        auctionName: 'Aman',
+    },
+];

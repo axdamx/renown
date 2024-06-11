@@ -13,11 +13,11 @@ import IonIcon from 'react-native-vector-icons/Ionicons';
 import { IMAGENAME } from '../images';
 import { mockAuctionData } from '../constants/mockData';
 
-const FeedScreen: React.FC<Props> = ({ navigation }) => {
+const ProfileScreen: React.FC<Props> = ({}) => {
     const renderCard = ({ item }) => (
-        <Pressable onPress={() => navigation.navigate('DetailsScreen', item)}>
+        <Pressable onPress={() => console.log('item', item)}>
             <ImageBackground
-                source={{ uri: item.image_uri }}
+                source={IMAGENAME}
                 resizeMode='contain'
                 style={{
                     backgroundColor: 'pink',
@@ -60,9 +60,10 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
                                 marginHorizontal: 10,
                                 alignSelf: 'center',
                             }}>
-                            <Text> {item.itemName} </Text>
+                            <Text> {item.auctionName} </Text>
                             <Text style={{ marginVertical: 4 }}>
-                                {item.authorName}
+                                {' '}
+                                {item.authorName}{' '}
                             </Text>
                         </View>
                     </View>
@@ -118,6 +119,9 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
     return (
         <ScrollView style={{}}>
             <Text style={{ fontWeight: 'bold', fontSize: 40, padding: 15 }}>
+                Profile
+            </Text>
+            <Text style={{ fontWeight: 'bold', fontSize: 40, padding: 15 }}>
                 Top Collection
             </Text>
             <FlatList
@@ -149,4 +153,4 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
     );
 };
 
-export default FeedScreen;
+export default ProfileScreen;

@@ -10,14 +10,14 @@ import {
     ScrollView,
 } from 'react-native';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import { IMAGENAME } from '../images';
-import { mockAuctionData } from '../constants/mockData';
+import {IMAGENAME} from '../images';
+import {mockAuctionData} from '../constants/mockData';
 
-const FeedScreen: React.FC<Props> = ({ navigation }) => {
-    const renderCard = ({ item }) => (
-        <Pressable onPress={() => navigation.navigate('DetailsScreen', item)}>
+const ExploreScreen: React.FC<Props> = ({}) => {
+    const renderCard = ({item}) => (
+        <Pressable onPress={() => console.log('item', item)}>
             <ImageBackground
-                source={{ uri: item.image_uri }}
+                source={IMAGENAME}
                 resizeMode='contain'
                 style={{
                     backgroundColor: 'pink',
@@ -60,9 +60,10 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
                                 marginHorizontal: 10,
                                 alignSelf: 'center',
                             }}>
-                            <Text> {item.itemName} </Text>
-                            <Text style={{ marginVertical: 4 }}>
-                                {item.authorName}
+                            <Text> {item.auctionName} </Text>
+                            <Text style={{marginVertical: 4}}>
+                                {' '}
+                                {item.authorName}{' '}
                             </Text>
                         </View>
                     </View>
@@ -91,11 +92,11 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
                         alignItems: 'center',
                         justifyContent: 'space-evenly',
                     }}>
-                    <View style={{ flexDirection: 'column' }}>
+                    <View style={{flexDirection: 'column'}}>
                         <Text> Current Bid </Text>
                         <Text> $24,000.00 </Text>
                     </View>
-                    <View style={{ flexDirection: 'column' }}>
+                    <View style={{flexDirection: 'column'}}>
                         <Text> Ending in </Text>
                         <Text> 10h17m30s </Text>
                     </View>
@@ -117,7 +118,10 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
 
     return (
         <ScrollView style={{}}>
-            <Text style={{ fontWeight: 'bold', fontSize: 40, padding: 15 }}>
+            <Text style={{fontWeight: 'bold', fontSize: 40, padding: 15}}>
+                Explore
+            </Text>
+            <Text style={{fontWeight: 'bold', fontSize: 40, padding: 15}}>
                 Top Collection
             </Text>
             <FlatList
@@ -138,10 +142,10 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
                     alignItems: 'center',
                     padding: 15,
                 }}>
-                <Text style={{ fontWeight: 'bold', fontSize: 40 }}>
+                <Text style={{fontWeight: 'bold', fontSize: 40}}>
                     Top Artist{' '}
                 </Text>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>
+                <Text style={{fontWeight: 'bold', fontSize: 20}}>
                     View all{' '}
                 </Text>
             </View>
@@ -149,4 +153,4 @@ const FeedScreen: React.FC<Props> = ({ navigation }) => {
     );
 };
 
-export default FeedScreen;
+export default ExploreScreen;
