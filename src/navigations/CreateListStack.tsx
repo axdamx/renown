@@ -14,7 +14,7 @@ const CreateListStack = () => {
                 name='CreateListScreen'
                 component={CreateListScreen}
                 options={({}) => ({
-                    headerShown: true,
+                    // headerShown: true,
                     title: 'Crete List',
                     headerTitleStyle: {
                         fontWeight: 'bold',
@@ -37,7 +37,7 @@ const CreateListStack = () => {
                 name='CreateListScreen1'
                 component={CreateListScreen1}
                 options={({}) => ({
-                    headerShown: true,
+                    // headerShown: true,
                     title: 'Crete List',
                     headerTitleStyle: {
                         fontWeight: 'bold',
